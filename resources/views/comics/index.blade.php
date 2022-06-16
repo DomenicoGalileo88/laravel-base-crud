@@ -4,7 +4,7 @@
 @section('content')
 
 
-<div class="container py-4">
+<div class="mx-5 py-4 bg-light">
     <div class="Add text-center">
         <h1 class="pb-4">Comics</h1>
 
@@ -22,6 +22,7 @@
                 <th>Series</th>
                 <th>Sale_Date</th>
                 <th>Type</th>
+                <th>Created_at</th>
                 <th>Updated_at</th>
                 <th>Action</th>
             </tr>
@@ -30,7 +31,7 @@
             @foreach($comics as $comic)
             <tr>
                 <td scope="row">{{$comic->id}}</td>
-                <td>{{$comic->title}}</td>
+                <td><strong>{{$comic->title}}</strong></td>
                 <td><img width="100" src="{{$comic->thumb}}" alt=""></td>
                 <td>{{$comic->description}}</td>
                 <td>{{$comic->price}}€</td>

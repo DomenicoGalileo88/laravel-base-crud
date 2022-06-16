@@ -4,10 +4,11 @@
 @section('content')
 
 
-<div class="container py-4">
-    <h1>Create a new comic</h1>
+<h1 class="text-center py-4">Create a new comic</h1>
 
-    <form action="{{route('comics.store')}}" method="post">
+<div class="container py-4 d-flex justify-content-center">
+
+    <form class="w-50" action="{{route('comics.store')}}" method="post">
         @csrf
         <div class="mb-3">
             <label for="title" class="form-label">Title</label>
