@@ -5,7 +5,7 @@
 
 
 <div class="container py-4">
-    <img class="img-fluid" src="{{$comic->cover_img}}" alt="">
+    <img class="img-fluid" src="{{$comic->thumb}}" alt="">
     <div class="text my-4">
         <h1>
             {{$comic->title}}

@@ -8,7 +8,7 @@
     <h1>Create a new comic</h1>
 
     <form action="{{route('comics.store')}}" method="post">
-    @csrf
+        @csrf
         <div class="mb-3">
             <label for="title" class="form-label">Title</label>
             <input type="text" name="title" id="title" class="form-control" placeholder="Comic title" aria-describedby="titleHelper">
@@ -22,14 +22,32 @@
         </div>
 
         <div class="mb-3">
-            <label for="cover_img" class="form-label">Cover image</label>
-            <input type="text" name="cover_img" id="cover_img" class="form-control" placeholder="Comic cover_img" aria-describedby="cover_imgHelper">
-            <small id="cover_imgHelper" class="text-muted">Type the cover image</small>
+            <label for="price" class="form-label">Price</label>
+            <input type="text" name="price" id="price" class="form-control" placeholder="Comic price" aria-describedby="priceHelper">
+            <small id="priceHelper" class="text-muted">Price comic</small>
         </div>
 
         <div class="mb-3">
-          <label for="description" class="form-label">Description</label>
-          <textarea class="form-control" name="description" id="description" rows="8"></textarea>
+            <label for="series" class="form-label">Series</label>
+            <input type="text" name="series" id="series" class="form-control" placeholder="Comic series" aria-describedby="seriesHelper">
+            <small id="seriesHelper" class="text-muted">Type series</small>
+        </div>
+
+        <div class="mb-3">
+            <label for="sale_date" class="form-label">Sale date</label>
+            <input type="text" name="sale_date" id="sale_date" class="form-control" placeholder="Comic sale_date" aria-describedby="sale_dateHelper">
+            <small id="sale_dateHelper" class="text-muted">Sale date period</small>
+        </div>
+
+        <div class="mb-3">
+            <label for="type" class="form-label">Type</label>
+            <input type="text" name="type" id="type" class="form-control" placeholder="Comic type" aria-describedby="typeHelper">
+            <small id="typeHelper" class="text-muted">Type comic</small>
+        </div>
+
+        <div class="mb-3">
+            <label for="description" class="form-label">Description</label>
+            <textarea class="form-control" name="description" id="description" rows="8"></textarea>
         </div>
 
         <button type="submit" class="btn btn-primary">Add Comic</button>

@@ -18,8 +18,10 @@
                 <th>Title</th>
                 <th>Thumb</th>
                 <th>Description</th>
-                <th>Cover_img</th>
-                <th>Created_at</th>
+                <th>Price</th>
+                <th>Series</th>
+                <th>Sale_Date</th>
+                <th>Type</th>
                 <th>Updated_at</th>
                 <th>Action</th>
             </tr>
@@ -29,9 +31,12 @@
             <tr>
                 <td scope="row">{{$comic->id}}</td>
                 <td>{{$comic->title}}</td>
-                <td><img width="60" src="{{$comic->thumb}}" alt=""></td>
+                <td><img width="100" src="{{$comic->thumb}}" alt=""></td>
                 <td>{{$comic->description}}</td>
-                <td><img width="60" src="{{$comic->cover_img}}" alt=""></td>
+                <td>{{$comic->price}}€</td>
+                <td>{{$comic->series}}</td>
+                <td>{{$comic->sale_date}}</td>
+                <td>{{$comic->type}}</td>
                 <td>{{$comic->created_at}}</td>
                 <td>{{$comic->updated_at}}</td>
                 <td>
