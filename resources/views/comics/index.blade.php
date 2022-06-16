@@ -7,6 +7,8 @@
 <div class="container py-4">
     <h1 class="text-center pb-4">Comics</h1>
 
+    <a class="btn btn-primary" href="{{route('comics.create')}}" >Create Comic</a>
+
     <table class="table">
         <thead>
             <tr>
@@ -31,7 +33,7 @@
                 <td>{{$comic->created_at}}</td>
                 <td>{{$comic->updated_at}}</td>
                 <td>
-                    <a href="#">View</a> - <a href="#">Edit</a> - <a href="#">Delete</a>
+                    <a href="{{route('comics.show', $comic->id)}}">View</a> - <a href="#">Edit</a> - <a href="#">Delete</a>
                 </td>
             </tr>
             @endforeach
