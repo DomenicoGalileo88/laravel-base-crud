@@ -5,9 +5,11 @@
 
 
 <div class="container py-4">
-    <h1 class="text-center pb-4">Comics</h1>
+    <div class="Add text-center">
+        <h1 class="pb-4">Comics</h1>
 
-    <a class="btn btn-primary" href="{{route('comics.create')}}" >Create Comic</a>
+        <a class="btn btn-primary mb-4" href="{{route('comics.create')}}">Create Comic</a>
+    </div>
 
     <table class="table">
         <thead>

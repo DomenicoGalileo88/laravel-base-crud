@@ -22,9 +22,9 @@
         </div>
 
         <div class="mb-3">
-            <label for="cover_image" class="form-label">Cover image</label>
-            <input type="text" name="cover_image" id="cover_image" class="form-control" placeholder="Comic cover_image" aria-describedby="cover_imageHelper">
-            <small id="cover_imageHelper" class="text-muted">Type the cover image</small>
+            <label for="cover_img" class="form-label">Cover image</label>
+            <input type="text" name="cover_img" id="cover_img" class="form-control" placeholder="Comic cover_img" aria-describedby="cover_imgHelper">
+            <small id="cover_imgHelper" class="text-muted">Type the cover image</small>
         </div>
 
         <div class="mb-3">
