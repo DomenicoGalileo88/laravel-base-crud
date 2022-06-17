@@ -4,7 +4,7 @@
 @section('content')
 
 
-<h1 class="text-center py-4">Update comic</h1>
+<h1 class="text-center py-5">Update comic</h1>
 
 @include('partials.error')
 

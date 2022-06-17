@@ -4,9 +4,9 @@
 @section('content')
 
 
-<div class="mx-5 py-4 bg_azure">
+<div class="mx-5 py-4 bg_primary">
     <div class="Add text-center">
-        <h1 class="pb-4">Comics</h1>
+        <h1 class="pb-4">Comic List</h1>
 
         <a class="btn btn-primary mb-4" href="{{route('comics.create')}}">Create Comic</a>
     </div>
