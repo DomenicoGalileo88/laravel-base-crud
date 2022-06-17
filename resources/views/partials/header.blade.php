@@ -7,7 +7,7 @@
                 </a>
             </div>
             <ul class="link_nav nav justify-content-center">
-                <li class="nav-item {{ Route::currentRouteName() === 'comics.index' || Route::currentRouteName() === 'comics.show' ? 'active' : '' }}">
+                <li class="nav-item {{ Route::currentRouteName() === 'comics.index'|| Route::currentRouteName() === 'comics.edit' || Route::currentRouteName() === 'comics.create' || Route::currentRouteName() === 'comics.show' ? 'active' : '' }}">
                     <a class="nav-link" href="{{route('comics.index')}}">Comics</a>
                 </li>
 
@@ -16,4 +16,3 @@
     </div>
 </header>
 <!-- /#site_header -->
-

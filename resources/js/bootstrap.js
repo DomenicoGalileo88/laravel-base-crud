@@ -8,7 +8,7 @@ window._ = require('lodash');
 
 
 
-/* Bootstrap */
+/* Bootstrap Frameworck */
 
 require('bootstrap');
 
