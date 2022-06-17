@@ -1,2 +1,62 @@
-//
-@use 'bootstrap';
+@use "bootstrap";
+
+$dc-primary: #0282f9;
+$dc-banner-bg: #1c1c1c;
+$dc-footer-bg: #303030;
+$dc-text-dark: #797979;
+$dc-text-white: #fffff2;
+
+.btn-outline-pimary {
+    border: 1px solid $dc-primary;
+    color: $dc-text-white;
+    background-color: transparent;
+    padding: 0.5rem 1rem;
+}
+
+header {
+    height: 300px;
+
+    background-image: url("https://pbs.twimg.com/media/D097EjrX0AIOX2f.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    nav {
+        background-color: $dc-primary;
+        padding: 0.5rem 0;
+
+        width: 50%;
+        margin-top: 22%;
+        border-radius: 0.3rem;
+
+        img {
+            margin-right: 4rem;
+            width: 50px;
+            filter: drop-shadow(2px 4px 6px black);
+        }
+
+        a {
+            text-decoration: none;
+            color: $dc-text-white !important;
+        }
+        .link_nav {
+            .active {
+                border-bottom: 3px solid $dc-text-white;
+            }
+        }
+    }
+}
+
+footer {
+    height: 100px;
+    background-image: url("https://www.dccomics.com/sites/all/themes/dc_comics_bp/images/footer-bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    color: $dc-primary;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
