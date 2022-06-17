@@ -4,7 +4,7 @@
 @section('content')
 
 
-<div class="container py-4">
+<div class="container bg_azure py-5">
     <img class="img-fluid" src="{{$comic->thumb}}" alt="">
     <div class="text my-4">
         <h1>

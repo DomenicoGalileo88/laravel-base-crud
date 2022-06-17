@@ -4,7 +4,7 @@
 @section('content')
 
 
-<div class="mx-5 py-4 bg-light">
+<div class="mx-5 py-4 bg_azure">
     <div class="Add text-center">
         <h1 class="pb-4">Comics</h1>
 

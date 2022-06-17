@@ -3,8 +3,8 @@
 
 @section('content')
 
-<div class="p-5 bg-light">
-    <div class="container">
+<div class="p-5">
+    <div class="container bg_azure">
         <h1 class="display-3">Home</h1>
         <p class="lead">This is the home page</p>
         <hr class="my-2">

@@ -12180,7 +12180,12 @@ fieldset:disabled .btn {
   padding: 0.5rem 1rem;
 }
 
+.bg_azure {
+  background-color: rgba(2, 130, 249, 0.1019607843);
+}
+
 header {
+  position: relative;
   height: 300px;
   background-image: url("https://pbs.twimg.com/media/D097EjrX0AIOX2f.jpg");
   background-size: cover;
@@ -12189,6 +12194,8 @@ header {
 }
 
 header nav {
+  position: absolute;
+  bottom: -1rem;
   background-color: #0282f9;
   padding: 0.5rem 0;
   width: 50%;
