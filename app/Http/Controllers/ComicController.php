@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use App\Comic;
 use Illuminate\Http\Request;
 
+use App\Http\Requests\ComicRequest;
+
 class ComicController extends Controller
 {
     /**
@@ -118,6 +120,8 @@ class ComicController extends Controller
      */
     public function destroy(Comic $comic)
     {
-        //
+        $comic->delete();
+
+        return redirect()->route('comics.index');
     }
 }

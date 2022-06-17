@@ -13,7 +13,7 @@
     <form class="w-50" action="{{route('comics.update', $comic->id)}}" method="post">
         @csrf
 
-        @method('POT')
+        @method('PUT')
 
         <div class="mb-3">
             <label for="title" class="form-label">Title</label>
