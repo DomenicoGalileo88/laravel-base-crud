@@ -36,13 +36,13 @@ class ComicController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(ComicRequest $request)
     {
         /* $data = $request->all();
         Comic::create($data); */
-        
+
         /* Validazione dati */
-        $validated_data = $request->validate([
+        /* $validated_data = $request->validate([
             'title' => 'required|max:100',
                 'description' => 'nullable',
                 'thumb' => 'required',
@@ -50,7 +50,9 @@ class ComicController extends Controller
                 'series' => 'nullable',
                 'sale_date' => 'nullable',
                 'type' => 'nullable',
-        ]);
+        ]); */
+
+        $validated_data = $request->validated();
 
         Comic::create($validated_data);
 
@@ -78,7 +80,7 @@ class ComicController extends Controller
      */
     public function edit(Comic $comic)
     {
-        //
+        return view('comics.edit', compact('comic'));
     }
 
     /**
@@ -88,9 +90,24 @@ class ComicController extends Controller
      * @param  \App\Comic  $comic
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Comic $comic)
+    public function update(ComicRequest $request, Comic $comic)
     {
-        //
+        /* Validazione dati */
+        /* $validated_data = $request->validate([
+            'title' => 'required|max:100',
+            'description' => 'nullable',
+            'thumb' => 'required',
+            'price' => 'nullable',
+            'series' => 'nullable',
+            'sale_date' => 'nullable',
+            'type' => 'nullable',
+        ]); */
+
+        $validated_data = $request->validated();
+
+        $comic->update($validated_data);
+
+        return redirect()->route('comics.index');
     }
 
     /**

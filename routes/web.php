@@ -23,4 +23,4 @@ Route::get('/comics/create', 'ComicController@create')->name('comics.create');
 Route::post('/comics/store', 'ComicController@store')->name('comics.store');
 Route::get('/comics/{comic}', 'ComicController@show')->name('comics.show'); */
 
-Route::resource('/comics', 'ComicContoller');
+Route::resource('/comics', 'ComicController');
